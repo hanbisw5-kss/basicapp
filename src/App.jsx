@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { DiAtom } from "react-icons/di";
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,8 +23,9 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is ksss {count}
         </button>
-        <p>
+        <p className='bg-slate-500'>
           Edit <code>src/App.jsx</code> and save to test HMR
+          <DiAtom />
         </p>
       </div>
       <p className="read-the-docs">
